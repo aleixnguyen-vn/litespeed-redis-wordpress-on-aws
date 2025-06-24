@@ -625,43 +625,43 @@ From firewall hardening to HTTP/3 optimization and object caching, every compone
 
 #### ✅ Homepage with HTTPS + Admin Bar  
 WordPress frontend running on HTTPS with admin bar visible (logged-in user).
-![Homepage (HTTPS + Admin Bar)](screenshots/homepage_https.png)
+![Homepage (HTTPS + Admin Bar)](screenshots/homepage_https.PNG)
 
 #### ✅ LSWS Install Script Output (Terminal)  
 Installation script confirms LSWS and LSPHP installed successfully.
-![LSWS Install Output](screenshots/lsws_install_script_output.png)
+![LSWS Install Output](screenshots/lsws_install_script_output.PNG)
 
 #### ✅ LiteSpeed WebAdmin Panel (after port change)  
 GUI shows custom port and confirmed listener setup.
-![LiteSpeed WebAdmin GUI](screenshots/lsws_admin_panel.png)
+![LiteSpeed WebAdmin GUI](screenshots/lsws_admin_panel.PNG)
 
 #### ✅ Logged-in wp-admin Dashboard  
 Full access to WordPress admin panel after deployment.
-![wp-admin Dashboard](screenshots/wp_admin_loggedin.png)
+![wp-admin Dashboard](screenshots/wp_admin_loggedin.PNG)
 
 #### ✅ LiteSpeed Cache Plugin – Cache Status ON, Guest Mode ON  
 Shows plugin working with optimal settings.
-![LSCache Plugin Dashboard](screenshots/lscache_plugin_dashboard.png)
+![LSCache Plugin Dashboard](screenshots/lscache_plugin_dashboard.PNG)
 
 #### ✅ Redis Object Cache Plugin – Connected & Persistent  
 Redis object cache active with persistent connection.
-![Redis Plugin Status](screenshots/redis_plugin_status.png)
+![Redis Plugin Status](screenshots/redis_plugin_status.PNG)
 
 #### ✅ System Load (`htop`) During Benchmark – RAM ~798MB  
 Shows `lsphp`, Redis and MariaDB under high load with stable memory usage.
-![htop at peak load](screenshots/htop_at_peak.png)
+![htop at peak load](screenshots/htop_at_peak.PNG)
 
 #### ✅ Redis CLI Stats – 99.91% Hit Rate  
 `1,623,661 / 1,625,141` confirmed via `redis-cli info stats`.
-![Redis CLI Info](screenshots/redis_cli_info.png)
+![Redis CLI Info](screenshots/redis_cli_info.PNG)
 
 #### ✅ WordPress Site Health – All Passed  
 No warnings or critical issues reported by WP core.
-![Site Health Status](screenshots/site_health_status.png)
+![Site Health Status](screenshots/site_health_status.PNG)
 
 #### ✅ Headers via `curl -I` – LiteSpeed + Cache HIT  
 Headers confirm `x-litespeed-cache: hit` and `server: LiteSpeed`.
-![Headers Check](screenshots/headers_curl_check.png)
+![Headers Check](screenshots/headers_curl_check.PNG)
 
 #### ✅ Pingdom Website Speed Test  
 Performance metrics including TTFB, page size, and load time.
@@ -669,8 +669,8 @@ Performance metrics including TTFB, page size, and load time.
 
 #### ✅ Lighthouse Performance Score  
 Google Lighthouse score 95+ confirming frontend speed optimization.
-![Lighthouse Audit](screenshots/lighthouse_perf_score.png)
+![Lighthouse Audit](screenshots/lighthouse_perf_score.PNG)
 
 #### ✅ Loader.io Load Test – 250 Concurrent Users  
 Avg response: **189ms** | Error rate: **0.0%** | All requests successful over 1 minute.
-![Loader.io Test](screenshots/loaderio_test_result.png)
+![Loader.io Test](screenshots/loaderio_test_result.PNG)
