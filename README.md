@@ -112,7 +112,7 @@ ufw status verbose  # (optional) view rules
 
 
 
-### 3.4 Install LiteSpeed + PHP + MariaDB
+### 3.4 Install LiteSpeed + PHP (LSAPI)
 
 > 💡 Note: Manual LSWS + LSPHP setup often leads to PHP not executing (e.g., `.php` files downloading instead).  
 > This setup uses the official install script to avoid those issues, save lots of time.
@@ -146,7 +146,7 @@ Edit the config file:
 ```bash
 nano /usr/local/lsws/admin/conf/admin_config.xml
 ```
-Find this `<listerner>` block:
+Find this `<listener>` block:
 
 ```xml
 <listener>
