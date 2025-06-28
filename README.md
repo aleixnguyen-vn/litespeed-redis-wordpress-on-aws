@@ -71,16 +71,16 @@ Set up swap memory to ensure system stability under low RAM (t2.micro = 1GB). Th
 
 ```bash
 # Create 2GB swap file
-sudo fallocate -l 2G /swapfile
+fallocate -l 2G /swapfile
 
 # Secure permissions
-sudo chmod 600 /swapfile
+chmod 600 /swapfile
 
 # Format swap
-sudo mkswap /swapfile
+mkswap /swapfile
 
 # Enable swap
-sudo swapon /swapfile
+swapon /swapfile
 
 # Auto-enable swap on reboot
 echo '/swapfile none swap sw 0 0' >> /etc/fstab
